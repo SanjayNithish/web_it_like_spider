@@ -1,0 +1,155 @@
+.track_Title{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.title{
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+.track_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+    margin-bottom: 7rem;
+}
+/*.track_item{
+    background: var(--card-bg);
+    width: 25%;
+    height: 27rem;
+    padding: 30px;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}*/
+
+.track_icon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--icon-bg);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+.track_icon i{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.track_title{
+    color: var(--primary-color);
+    font-size: 1.35rem;
+    margin-bottom: 30px;
+}
+.description{
+    color: #fff;
+}
+/*
+.track_item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }*/
+
+
+
+/* Add hover animation for track_item */
+.track_item {
+    background: var(--card-bg);
+    width: 25%;
+    height: 27rem;
+    padding: 30px;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Pseudo-element for creating an overlay on hover */
+  .track_item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Hover effect for the track_item */
+  .track_item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--primary-color); /* Change to your desired hover shadow color */
+    background-color: var(--hover-bg-color);
+  }
+  
+  /* Hover effect for the overlay */
+  .track_item:hover::before {
+    opacity: 1;
+  }
+  
+  /* Adjust text color on hover */
+  .track_item:hover .track_title {
+    color: var(--primary-color);
+  }
+  
+  /* Adjust description color on hover */
+  .track_item:hover .description {
+    color: white;
+  }
+  
+@media only screen and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .track_wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .track_item{
+        background: var(--card-bg);
+        width: 85%;
+        height: 17rem;
+        padding: 30px;
+        border-radius: .5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        margin-bottom: 5rem;
+    }
+    .description{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:615px){
+  .track_Title{
+    padding-bottom: 0px;
+  }
+  .description{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .description {
+      font-size: 14px;
+    }
+}

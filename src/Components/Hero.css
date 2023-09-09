@@ -1,0 +1,119 @@
+
+.hero_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero_content, .hero_img{
+    width: 50%;
+}
+.hero_content{
+    margin-right: 5rem;
+}
+.hero_content h2{
+    font-size: 2rem;
+    line-height: 50px;
+}
+.highlight{
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+.hero_content p{
+    font-size: 1.1rem;
+    margin-top: 40px;
+    color: #c1c1c1;
+}
+.primary_btn{
+    margin-top: 30px;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    outline: none;
+    color : #fff;
+    border-radius: 0.3rem;
+    background-color: var(--primary-color);
+    cursor: pointer;
+
+}
+.description{
+    display: flex;
+    margin-top: 2rem;
+}
+.description .date{
+    color: var(--primary-color);
+}
+.description span{
+    color: white;
+}
+.left h3{
+    display: flex;
+    flex-direction: column;
+}
+.right h3{
+    display: flex;
+    flex-direction: column;
+}
+.description .left{
+    margin-right: 5rem;
+}
+.description .left h3{
+    margin-bottom: 1.5rem;
+}
+.description .right h3{
+    margin-bottom: 1.5rem;
+}
+.description .left .contactno{
+    display: flex;
+}
+.contactno p{
+    margin-top: 0px;
+    margin-left: .5rem;
+    font-weight: bold;
+    color: white;
+}
+.contactno i{
+    color: var(--primary-color);
+
+}
+
+
+
+@media only screen and (max-width:992px){
+    .hero_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+    .hero_content{
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+    .description{
+        margin-top: 2rem;
+    }
+    .hero_img{
+        width: 70%;
+        align-items: center;
+
+    }
+    
+
+}
+@media only screen and (max-width:992px){
+
+    .container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+}
