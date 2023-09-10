@@ -60,3 +60,14 @@
         align-items: center;
     }
 }
+@media only screen and (max-width:500px){
+    .container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .home_details h3{
+        font-size: .9rem;
+    }
+    
+}

@@ -120,7 +120,12 @@ ul li .date{
 .container ul li:nth-child(odd) .date{
     right: 20px;
 }
-
+.date{
+    font-weight: bold !important;
+}
+.title1{
+    font-weight: bold !important;
+}
 
 
 @media screen and (max-width:994px){

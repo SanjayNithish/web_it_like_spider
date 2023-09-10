@@ -117,3 +117,13 @@
     }
     
 }
+@media only screen and (max-width:500px){
+    .container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .hero_wrapper h2{
+        font-size: 1.5rem !important;
+    }
+}

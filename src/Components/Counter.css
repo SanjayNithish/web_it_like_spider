@@ -40,3 +40,24 @@
         width: 24%;
     }
 }
+@media only screen and (max-width:500px){
+    .container{
+        width: 100%;
+    }
+    .counter_wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px 0px;
+        background-color:rgb(0, 8, 39);
+    }
+    .counter_item{
+        width: 24%;
+    }
+    .counter_number{
+        font-size: 2rem;
+    }
+    .counter_title{
+        font-size: 1rem;
+    }
+}
